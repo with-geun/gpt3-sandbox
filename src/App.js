@@ -199,6 +199,12 @@ class App extends React.Component {
                   onChange={this.handleInputChange}
                 /> */}
               </Form.Group>
+              <div>
+                <p class="text-center" style={{fontSize:"40px", fontWeight:"bold"}}>Title</p>
+              </div>
+              <div>
+                <p style={{fontSize:"25px", fontWeight:"bold"}}>Guide</p>
+              </div>
               <div class="input-group mb-3">
                 <span
                   style={{
