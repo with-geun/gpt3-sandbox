@@ -111,7 +111,7 @@ class App extends React.Component {
               margin: "auto",
               marginTop: "80px",
               display: "block",
-              maxWidth: "500px",
+              maxWidth: "1000px",
               minWidth: "200px",
               width: "50%",
             }}
@@ -190,24 +190,93 @@ class App extends React.Component {
                     </Form.Group>
                   </div>
                 )}
-                <Form.Label>{this.state.description}</Form.Label>
+                {/* <Form.Label>{this.state.description}</Form.Label>
                 <Form.Control
                   type="text"
                   as="textarea"
                   placeholder="Enter text"
                   value={this.state.input}
                   onChange={this.handleInputChange}
-                />
+                /> */}
               </Form.Group>
+              <div class="input-group mb-3">
+                <span
+                  style={{
+                    borderBottomRightRadius: "0px",
+                    borderBottomLeftRadius: "0px",
+                    borderTopLeftRadius: "10px",
+                    borderTopRightRadius: "10px",
+                  }}
+                  class="input-group-text col-md-12"
+                >
+                  Example Input
+                </span>
+                <input
+                  type="text"
+                  class="form-control"
+                  style={{
+                    height: "50px",
+                    borderTopLeftRadius: "0px",
+                    borderTopRightRadius: "0px",
+                    borderBottomLeftRadius: "10px",
+                    borderBottomRightRadius: "10px",
+                  }}
+                ></input>
+              </div>
+              <div class="input-group mb-3 mt-3">
+                <span
+                  style={{
+                    borderBottomRightRadius: "0px",
+                    borderBottomLeftRadius: "0px",
+                    borderTopLeftRadius: "10px",
+                    borderTopRightRadius: "10px",
+                    backgroundColor: "rgb(249 250 251) !important",
+                  }}
+                  class="input-group-text col-md-12"
+                >
+                  Example Output
+                </span>
+                <input
+                  type="text"
+                  class="form-control"
+                  style={{
+                    height: "50px",
+                    borderTopLeftRadius: "0px",
+                    borderTopRightRadius: "0px",
+                    borderBottomLeftRadius: "10px",
+                    borderBottomRightRadius: "10px",
+                  }}
+                ></input>
+              </div>
+              <div class="input-group mb-3 mt-3">
+                <span
+                  style={{
+                    borderBottomRightRadius: "0px",
+                    borderBottomLeftRadius: "0px",
+                    borderTopLeftRadius: "10px",
+                    borderTopRightRadius: "10px",
+                  }}
+                  class="input-group-text col-md-12"
+                >
+                  Prompt
+                </span>
+                <textarea
+                  rows="8"
+                  type="text"
+                  class="form-control"
+                  style={{
+                    borderTopLeftRadius: "0px",
+                    borderTopRightRadius: "0px",
+                    borderBottomLeftRadius: "10px",
+                    borderBottomRightRadius: "10px",
+                  }}
+                ></textarea>
+              </div>
 
               <Button variant="primary" type="submit">
                 {this.state.buttonText}
               </Button>
-              <div
-                class="spinner-border spinner-border-sm text-primary"
-                role="status"
-                id="loading"
-              >
+              <div role="status" id="loading">
                 <span class="sr-only">Loading...</span>
               </div>
             </Form>
